@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .s1 {
+            width: 100vw;
+            background-color: black;
+            color: white;
+        }
+
+       nav > ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        ul li {
+            list-style: none;
+            padding: 10px;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav li .s2{
+            display: none;
+            position: absolute;
+            background-color: gray;
+            padding-left: 10px;
+
+        }
+
+        nav li:hover .s2{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="s1">
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li>
+                    <a href="">More</a>
+                    <ul class="s2">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">More</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
